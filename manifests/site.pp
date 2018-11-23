@@ -9,8 +9,6 @@
 # http://docs.puppetlabs.com/guides/language_guide.html#nodes for more on
 # node definitions.)
 
-include ntp
-
 ## Active Configurations ##
 
 # Disable filebucket by default for all File resources:
