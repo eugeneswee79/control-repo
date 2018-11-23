@@ -31,6 +31,5 @@ node default {
   #   class { 'my_class': }
   class {'ntp':
     servers => ['ntp.ubuntu.com'],
-    enabled => true,
   }
 }
