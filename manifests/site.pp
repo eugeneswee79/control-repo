@@ -30,7 +30,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   class {'ntp':
-    servers => ['time.google.com'],
-    enabled => false,
+    servers => ['ntp.ubuntu.com'],
+    enabled => true,
   }
 }
