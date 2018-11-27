@@ -35,3 +35,9 @@ node default {
     servers => ['ntp.ubuntu.com'],
   }
 }
+
+node centos1 {
+  class {'docker':
+    ensure => present,
+  }
+}
