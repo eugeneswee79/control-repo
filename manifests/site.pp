@@ -31,12 +31,14 @@ node default {
   #   class { 'my_class': }
 }
 
+# Running Puppet Discovery
 node centos1 {
   class {'docker':
     ensure => present,
   }
 }
 
+# Running Puppet Pipelines
 node centos2 {
   class {'docker':
     ensure => present,
@@ -44,5 +46,10 @@ node centos2 {
   class {'::mysql::server':
     root_password => 'Puppet4Life!',
     remove_default_accounts => true,
+  }
+  mysql::db {'pipelinesdb':
+    user => 'app',
+    password => 'Puppet4L:ife!',
+    host => 'localhost',
   }
 }
