@@ -39,3 +39,9 @@ node centos1 {
     ensure => present,
   }
 }
+
+node centos2 {
+  class {'docker':
+    ensure => present,
+  }
+}
