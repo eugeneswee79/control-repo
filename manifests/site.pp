@@ -41,4 +41,8 @@ node centos2 {
   class {'docker':
     ensure => present,
   }
+  class {'::mysql::server':
+    root_password => 'Puppet4Life!',
+    remove_default_accounts => true,
+  }
 }
