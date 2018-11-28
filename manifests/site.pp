@@ -51,5 +51,6 @@ node centos2 {
     user => 'app',
     password => 'Puppet4Liife!',
     host => 'localhost',
+    grant => ['SELECT', 'UPDATE'],
   }
 }
