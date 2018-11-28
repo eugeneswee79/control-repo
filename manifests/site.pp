@@ -49,7 +49,7 @@ node centos2 {
   }
   mysql::db {'pipelinesdb':
     user => 'app',
-    password => 'Puppet4L:ife!',
+    password => 'Puppet4Liife!',
     host => 'localhost',
   }
 }
