@@ -6,5 +6,6 @@ class profile::users_demo (
     ensure => $ensure,
     password => 'secret',
     home => '/home/myadmin',
+    managehome => true,
   }
 }
