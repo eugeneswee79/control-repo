@@ -1,6 +1,7 @@
 class profile::users {
   user {'myadmin':
-    ensure => present,
+    ensure => absent,
     password => 'secret',
+    home => '/home/myadmin',
   }
 }
