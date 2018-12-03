@@ -1,5 +1,5 @@
 class profile::users (
-  Boolean $ensure = present,
+  String $ensure = present,
 
 ) {
   user {'myadmin':
