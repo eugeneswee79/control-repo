@@ -2,7 +2,7 @@ class profile::demo::services (
   #String $ensure = present,
 ) {
 
-  service {'cron': 
+  service {'crond': 
     ensure => 'stopped',
   }
 }
