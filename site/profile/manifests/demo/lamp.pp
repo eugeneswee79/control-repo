@@ -28,7 +28,7 @@ class profile::demo::lamp {
   }
 
   # install php5 package
-  package { 'php5':
+  package { 'php':
     # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
