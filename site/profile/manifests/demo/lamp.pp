@@ -17,13 +17,13 @@ class profile::demo::lamp {
   }
 
   # install mysql-server package
-  package { 'mysql-community-server':
+  package { 'mariadb-server':
     # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
 
   # ensure mysql service is running
-  service { 'mysqld':
+  service { 'mariadb':
     ensure => running,
   }
 
