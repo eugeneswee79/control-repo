@@ -1,6 +1,5 @@
 class profile::demo::users (
   String $ensure = present,
-
 ) {
 
   case $facts['os']['family'] {
@@ -16,13 +15,14 @@ class profile::demo::users (
         ensure => $ensure,
         gid => '888'
       }
+
       user {'myadmin':
         ensure => $ensure,
         password => 'secret',
         shell => '/bin/bash',
         home => '/home/myadmin',
         managehome => true,
-        groups => ['admins'],
+        gid => 'admins',
       }
     }
   }
