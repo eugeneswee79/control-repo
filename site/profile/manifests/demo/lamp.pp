@@ -6,13 +6,13 @@ class profile::demo::lamp {
   # }
 
   # install apache2 package
-  package { 'apache2':
+  package { 'httpd':
     # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
 
   # ensure apache2 service is running
-  service { 'apache2':
+  service { 'httpd':
     ensure => running,
   }
 
