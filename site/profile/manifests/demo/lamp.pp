@@ -17,13 +17,13 @@ class profile::demo::lamp {
   }
 
   # install mysql-server package
-  package { 'mysql-server':
+  package { 'mysql-community-server':
     # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
 
   # ensure mysql service is running
-  service { 'mysql':
+  service { 'mysqld':
     ensure => running,
   }
 
