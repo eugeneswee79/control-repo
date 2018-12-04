@@ -37,6 +37,6 @@ class profile::demo::lamp {
   file { '/var/www/html/info.php':
     ensure => file,
     content => '<?php  phpinfo(); ?>',    # phpinfo code
-    require => Package['apache2'],        # require 'apache2' package before creating
+    require => Package['httpd'],        # require 'apache2' package before creating
   } 
 }
