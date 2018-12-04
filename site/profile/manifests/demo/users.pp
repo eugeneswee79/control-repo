@@ -10,20 +10,20 @@ class profile::demo::users (
         password => 'secret',
       }
     }
-  }
 
-  default: {
-    group {'admins':
-      ensure => $ensure,
-      gid => '888'
-    }
-    user {'myadmin':
-      ensure => $ensure,
-      password => 'secret',
-      shell => '/bin/bash',
-      home => '/home/myadmin',
-      managehome => true,
-      groups => ['admins'],
+    default: {
+      group {'admins':
+        ensure => $ensure,
+        gid => '888'
+      }
+      user {'myadmin':
+        ensure => $ensure,
+        password => 'secret',
+        shell => '/bin/bash',
+        home => '/home/myadmin',
+        managehome => true,
+        groups => ['admins'],
+      }
     }
   }
 }

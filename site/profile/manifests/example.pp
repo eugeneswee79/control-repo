@@ -1,3 +1,3 @@
 class profile::example {
-  notify { 'hello world':}
+  #notify { 'hello world':}
 }
