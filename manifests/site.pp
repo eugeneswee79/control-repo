@@ -37,20 +37,3 @@ node centos1 {
     ensure => present,
   }
 }
-
-# Running Puppet Pipelines
-node centos2 {
-  class {'docker':
-    ensure => present,
-  }
-  class {'::mysql::server':
-    root_password => 'Puppet4Life!',
-    remove_default_accounts => true,
-  }
-  mysql::db {'pipelinesdb':
-    user => 'app',
-    password => 'Puppet4Liife!',
-    host => 'localhost',
-    grant => ['SELECT', 'UPDATE'],
-  }
-}
