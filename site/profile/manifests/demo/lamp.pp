@@ -1,13 +1,13 @@
 class profile::demo::lamp {
 
-  # execute 'apt-get update'
-  exec { 'yum':                    # exec resource named 'yum'
-    command => '/usr/bin/yum'  # command this resource will run
-  }
+  # # execute 'yum'
+  # exec { 'yum':                    # exec resource named 'yum'
+  #   command => '/usr/bin/yum'  # command this resource will run
+  # }
 
   # install apache2 package
   package { 'apache2':
-    require => Exec['yum'],        # require 'yum' before installing
+    # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
 
@@ -18,7 +18,7 @@ class profile::demo::lamp {
 
   # install mysql-server package
   package { 'mysql-server':
-    require => Exec['yum'],        # require 'yum' before installing
+    # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
 
@@ -29,7 +29,7 @@ class profile::demo::lamp {
 
   # install php5 package
   package { 'php5':
-    require => Exec['yum'],        # require 'yum' before installing
+    # require => Exec['yum'],        # require 'yum' before installing
     ensure => installed,
   }
 
