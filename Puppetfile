@@ -8,6 +8,7 @@ mod 'puppetlabs/concat',      '4.2.1'
 mod 'puppetlabs-ntp',          '7.3.0'
 mod 'puppetlabs-docker',       '3.1.0'
 mod 'puppetlabs-mysql',        '7.0.0'
+mod 'puppetlabs-java',         '3.2.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
