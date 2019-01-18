@@ -22,4 +22,4 @@ mod 'puppetlabs-java',         '3.2.0'
 
 mod 'windows_upgrade_assistance',
  :git => 'http://gitlab.vm/puppet/windows_upgrade_assistance.git',
- :branch => 'master'
+ :branch => 'production'
