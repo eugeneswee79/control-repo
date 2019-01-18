@@ -21,5 +21,5 @@ mod 'puppetlabs-java',         '3.2.0'
 #  :branch => 'docs_experiment'
 
 mod 'windows_upgrade_assistance',
-  :git => ’http://gitlab.vm/puppet/windows_upgrade_assistance.git',
-  :branch => ‘master’
+ :git => 'http://gitlab.vm/puppet/windows_upgrade_assistance.git',
+ :branch => 'master'
