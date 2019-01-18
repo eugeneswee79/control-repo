@@ -22,5 +22,5 @@ mod 'puppetlabs-java',         '3.2.0'
 
 mod 'windows_upgrade_assistance',
 # :git => 'http://gitlab.vm/puppet/windows_upgrade_assistance.git',
-  :git => 'https://github.com/cheehuan/os_upgrade_assistance.git',
+  :git => 'git@github.com:cheehuan/os_upgrade_assistance.git',
   :branch => 'master'
